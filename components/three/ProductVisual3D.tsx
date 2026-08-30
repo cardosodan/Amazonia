@@ -4,6 +4,7 @@ import { useMemo, useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 import type { ProductId } from "@/types/product";
+import { reducedMotionRef } from "./sceneLayout";
 
 interface ProductVisual3DProps {
   id: ProductId;
@@ -24,6 +25,13 @@ export function ProductVisual3D({ id, position }: ProductVisual3DProps) {
 
   useFrame((state) => {
     if (!group.current) return;
+    // Com "menos movimento" pedido, mantém o objeto parado (sem giro/respiração
+    // automáticos) — só a câmera continua se movendo, e isso é resposta ao scroll.
+    if (reducedMotionRef.current) {
+      group.current.rotation.y = seed;
+      group.current.scale.setScalar(baseScale);
+      return;
+    }
     group.current.rotation.y = state.clock.elapsedTime * 0.18 + seed;
     const breathe = baseScale + Math.sin(state.clock.elapsedTime * 0.9 + seed) * 0.05;
     group.current.scale.setScalar(breathe);

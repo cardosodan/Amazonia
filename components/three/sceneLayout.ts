@@ -28,3 +28,12 @@ export const totalJourneyDepth = SEGMENT_DEPTH * productsWithStats.length;
 
 /** Referência mutável (fora do ciclo de render do React) com o progresso 0..1 do scroll. */
 export const scrollProgressRef = { current: 0 };
+
+/**
+ * true quando o visitante pediu menos movimento no sistema — usado só para
+ * suavizar os laços ambientes que giram/pulsam sozinhos (respiração dos
+ * produtos, ping dos pontos de origem). A câmera continua se movendo com o
+ * scroll normalmente, porque esse movimento é resposta direta à ação do
+ * usuário, não uma animação automática.
+ */
+export const reducedMotionRef = { current: false };

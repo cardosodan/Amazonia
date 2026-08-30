@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 import { productsWithStats } from "@/data/products";
-import { sceneStops } from "./sceneLayout";
+import { reducedMotionRef, sceneStops } from "./sceneLayout";
 
 /** Pontos de origem pulsantes no mapa do Hero — um por produto, com um "ping" que se expande. */
 export function OriginPoints() {
@@ -12,6 +12,15 @@ export function OriginPoints() {
   const pingRefs = useRef<(THREE.Mesh | null)[]>([]);
 
   useFrame((state) => {
+    if (reducedMotionRef.current) {
+      // Pontos continuam visíveis, só sem o pulso/ping automático.
+      coreRefs.current.forEach((mesh) => mesh?.scale.setScalar(1));
+      pingRefs.current.forEach((mesh) => {
+        if (!mesh) return;
+        (mesh.material as THREE.MeshBasicMaterial).opacity = 0;
+      });
+      return;
+    }
     coreRefs.current.forEach((mesh, i) => {
       if (!mesh) return;
       const pulse = 1 + Math.sin(state.clock.elapsedTime * 1.6 + i * 1.1) * 0.3;

@@ -141,8 +141,43 @@ h4,
   }
 }
 
+@keyframes mote-drift {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.55;
+  }
+  90% {
+    opacity: 0.25;
+  }
+  100% {
+    transform: translateY(-92vh) translateX(18px);
+    opacity: 0;
+  }
+}
+
+.animate-mote {
+  animation: mote-drift linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-mote {
+    animation: none;
+    opacity: 0.2 !important;
+    bottom: 40% !important;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
+}
+
+/* Estado inicial da entrada do Hero — o GSAP anima para opacidade 1 assim que monta.
+   Evita o "pisca" de aparecer cheio e sumir de novo entre o primeiro paint e a hidratação. */
+[data-intro] {
+  opacity: 0;
 }

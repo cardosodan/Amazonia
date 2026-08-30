@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces, Manrope } from "next/font/google";
 import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvider";
+import { Atmosphere } from "@/components/ui/Atmosphere";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -26,7 +27,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="pt-BR" className={`${fraunces.variable} ${manrope.variable} h-full antialiased`}>
       <body className="min-h-full bg-void text-mist">
+        <noscript>
+          <style>{"[data-intro]{opacity:1 !important}"}</style>
+        </noscript>
         <div aria-hidden className="grain" />
+        <Atmosphere />
         <SmoothScrollProvider>{children}</SmoothScrollProvider>
       </body>
     </html>
