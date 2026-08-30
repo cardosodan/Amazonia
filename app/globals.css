@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+:root {
+  /* Paleta — terra amazônica: verde-floresta profundo, barro e um único
+     acento dourado (açaí/castanha), longe do "verde tropical" genérico. */
+  --color-void: #0b0f0c;
+  --color-canopy: #131a15;
+  --color-canopy-soft: #1b241d;
+  --color-bark: #241a12;
+  --color-earth: #6b4a30;
+  --color-moss: #35473a;
+  --color-river: #24312c;
+  --color-mist: #f3ede0;
+  --color-mist-dim: #cfc6b2;
+  --color-gold: #c8a35c;
+  --color-gold-bright: #e6c583;
+  --color-positive: #8fbf9f;
+  --color-negative: #d98a6b;
+
+  --font-display: var(--font-fraunces);
+  --font-body: var(--font-manrope);
+}
+
+@theme inline {
+  --color-void: var(--color-void);
+  --color-canopy: var(--color-canopy);
+  --color-canopy-soft: var(--color-canopy-soft);
+  --color-bark: var(--color-bark);
+  --color-earth: var(--color-earth);
+  --color-moss: var(--color-moss);
+  --color-river: var(--color-river);
+  --color-mist: var(--color-mist);
+  --color-mist-dim: var(--color-mist-dim);
+  --color-gold: var(--color-gold);
+  --color-gold-bright: var(--color-gold-bright);
+  --color-positive: var(--color-positive);
+  --color-negative: var(--color-negative);
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--color-void);
+  color-scheme: dark;
+}
+
+body {
+  background: var(--color-void);
+  color: var(--color-mist);
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-void);
+}
+
+/* Scrollbar discreta, em tom terroso */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-void);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-moss);
+  border-radius: 999px;
+  border: 2px solid var(--color-void);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+/* Textura sutil de grão, para tirar o aspecto "flat" de gradiente puro */
+.grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 60;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.text-gradient-gold {
+  background: linear-gradient(120deg, var(--color-gold-bright), var(--color-gold) 60%, var(--color-earth));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.panel {
+  background: color-mix(in srgb, var(--color-canopy) 88%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-mist) 10%, transparent);
+  backdrop-filter: blur(14px);
+}
+
+.section-pad {
+  padding-inline: clamp(1.25rem, 5vw, 5rem);
+}
+
+@keyframes scroll-cue {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+}
+
+.animate-scroll-cue {
+  animation: scroll-cue 1.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-scroll-cue {
+    animation: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
