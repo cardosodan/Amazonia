@@ -1,0 +1,425 @@
+[
+  {
+    "id": "acai",
+    "slug": "acai",
+    "name": "Açaí",
+    "kicker": "Euterpe oleracea",
+    "unit": "R$/kg (polpa grossa)",
+    "origin": {
+      "region": "Baixo Amazonas e Ilha de Marajó",
+      "waterway": "Rio Amazonas",
+      "municipalities": [
+        "Igarapé-Miri",
+        "Ponta de Pedras",
+        "Cametá",
+        "Abaetetuba"
+      ]
+    },
+    "contextFact": "80% da produção paraense de açaí sai de apenas 6 municípios ribeirinhos.",
+    "accent": "#c8a35c",
+    "accentSoft": "#5b3a29",
+    "source": {
+      "label": "Boletim Semanal de Preços — Frutas Nativas",
+      "org": "CONAB",
+      "url": "https://www.conab.gov.br",
+      "updateFrequency": "semanal"
+    },
+    "description": "A fruta símbolo da Amazônia, colhida na copa das palmeiras e batida ainda fresca nas margens do rio.",
+    "history": [
+      {
+        "date": "2026-05-25",
+        "price": 14.58
+      },
+      {
+        "date": "2026-06-01",
+        "price": 14.22
+      },
+      {
+        "date": "2026-06-08",
+        "price": 14.54
+      },
+      {
+        "date": "2026-06-15",
+        "price": 13.83
+      },
+      {
+        "date": "2026-06-22",
+        "price": 13.28
+      },
+      {
+        "date": "2026-06-29",
+        "price": 13.21
+      },
+      {
+        "date": "2026-07-06",
+        "price": 13.01
+      },
+      {
+        "date": "2026-07-13",
+        "price": 12.65
+      },
+      {
+        "date": "2026-07-20",
+        "price": 12.05
+      },
+      {
+        "date": "2026-07-27",
+        "price": 12.29
+      },
+      {
+        "date": "2026-08-03",
+        "price": 11.98
+      },
+      {
+        "date": "2026-08-10",
+        "price": 11.34
+      },
+      {
+        "date": "2026-08-17",
+        "price": 11.58
+      },
+      {
+        "date": "2026-08-24",
+        "price": 11.8
+      }
+    ]
+  },
+  {
+    "id": "castanha",
+    "slug": "castanha-do-para",
+    "name": "Castanha-do-Pará",
+    "kicker": "Bertholletia excelsa",
+    "unit": "R$/kg (com casca)",
+    "origin": {
+      "region": "Sul do Amazonas e Acre",
+      "waterway": "Rio Madeira",
+      "municipalities": [
+        "Lábrea",
+        "Boca do Acre",
+        "Apuí",
+        "Novo Aripuanã"
+      ]
+    },
+    "contextFact": "Cada castanheira nativa pode levar mais de 300 anos para atingir seu porte adulto.",
+    "accent": "#c8a35c",
+    "accentSoft": "#4a3626",
+    "source": {
+      "label": "Boletim de Preços de Produtos Florestais Não Madeireiros",
+      "org": "CEASA-AM",
+      "url": "https://www.ceasa-am.com.br",
+      "updateFrequency": "quinzenal"
+    },
+    "description": "Extrativismo de floresta em pé: ouriços caem no chão da mata e são coletados por famílias extrativistas.",
+    "history": [
+      {
+        "date": "2026-05-25",
+        "price": 4.6
+      },
+      {
+        "date": "2026-06-01",
+        "price": 4.68
+      },
+      {
+        "date": "2026-06-08",
+        "price": 4.65
+      },
+      {
+        "date": "2026-06-15",
+        "price": 4.72
+      },
+      {
+        "date": "2026-06-22",
+        "price": 4.81
+      },
+      {
+        "date": "2026-06-29",
+        "price": 4.88
+      },
+      {
+        "date": "2026-07-06",
+        "price": 4.79
+      },
+      {
+        "date": "2026-07-13",
+        "price": 4.83
+      },
+      {
+        "date": "2026-07-20",
+        "price": 4.91
+      },
+      {
+        "date": "2026-07-27",
+        "price": 4.94
+      },
+      {
+        "date": "2026-08-03",
+        "price": 5.03
+      },
+      {
+        "date": "2026-08-10",
+        "price": 5.17
+      },
+      {
+        "date": "2026-08-17",
+        "price": 5.28
+      },
+      {
+        "date": "2026-08-24",
+        "price": 5.4
+      }
+    ]
+  },
+  {
+    "id": "peixe",
+    "slug": "tambaqui",
+    "name": "Tambaqui",
+    "kicker": "Colossoma macropomum",
+    "unit": "R$/kg (peixe inteiro)",
+    "origin": {
+      "region": "Médio Solimões",
+      "waterway": "Rio Solimões",
+      "municipalities": [
+        "Tefé",
+        "Manacapuru",
+        "Coari",
+        "Iranduba"
+      ]
+    },
+    "contextFact": "A piscicultura já responde por mais da metade do tambaqui vendido nas feiras de Manaus.",
+    "accent": "#c8a35c",
+    "accentSoft": "#22423a",
+    "source": {
+      "label": "Painel de Preços do Pescado",
+      "org": "SEPROR-AM",
+      "url": "https://www.sepror.am.gov.br",
+      "updateFrequency": "semanal"
+    },
+    "description": "O peixe mais pescado do Solimões, vendido inteiro nos portos e feiras flutuantes ao amanhecer.",
+    "history": [
+      {
+        "date": "2026-05-25",
+        "price": 15.94
+      },
+      {
+        "date": "2026-06-01",
+        "price": 16.11
+      },
+      {
+        "date": "2026-06-08",
+        "price": 15.78
+      },
+      {
+        "date": "2026-06-15",
+        "price": 15.6
+      },
+      {
+        "date": "2026-06-22",
+        "price": 15.79
+      },
+      {
+        "date": "2026-06-29",
+        "price": 15.46
+      },
+      {
+        "date": "2026-07-06",
+        "price": 15.28
+      },
+      {
+        "date": "2026-07-13",
+        "price": 15.24
+      },
+      {
+        "date": "2026-07-20",
+        "price": 15.38
+      },
+      {
+        "date": "2026-07-27",
+        "price": 15.59
+      },
+      {
+        "date": "2026-08-03",
+        "price": 15.41
+      },
+      {
+        "date": "2026-08-10",
+        "price": 15.63
+      },
+      {
+        "date": "2026-08-17",
+        "price": 15.74
+      },
+      {
+        "date": "2026-08-24",
+        "price": 15.9
+      }
+    ]
+  },
+  {
+    "id": "guarana",
+    "slug": "guarana",
+    "name": "Guaraná",
+    "kicker": "Paullinia cupana",
+    "unit": "R$/kg (semente seca)",
+    "origin": {
+      "region": "Alto Rio Negro e Maués",
+      "waterway": "Rio Maués-Açu",
+      "municipalities": [
+        "Maués",
+        "Urucará",
+        "Barreirinha"
+      ]
+    },
+    "contextFact": "Maués concentra quase 30% de toda a produção nacional de guaraná em pequenas roças familiares.",
+    "accent": "#c8a35c",
+    "accentSoft": "#5c1f24",
+    "source": {
+      "label": "Boletim de Preços de Culturas Regionais",
+      "org": "CONAB",
+      "url": "https://www.conab.gov.br",
+      "updateFrequency": "mensal"
+    },
+    "description": "A semente que vira pó e bastão, cultivada em roças de terra firme entre igarapés escuros.",
+    "history": [
+      {
+        "date": "2026-05-25",
+        "price": 45.39
+      },
+      {
+        "date": "2026-06-01",
+        "price": 45.43
+      },
+      {
+        "date": "2026-06-08",
+        "price": 45.86
+      },
+      {
+        "date": "2026-06-15",
+        "price": 44.71
+      },
+      {
+        "date": "2026-06-22",
+        "price": 43.99
+      },
+      {
+        "date": "2026-06-29",
+        "price": 43.82
+      },
+      {
+        "date": "2026-07-06",
+        "price": 44.54
+      },
+      {
+        "date": "2026-07-13",
+        "price": 42.79
+      },
+      {
+        "date": "2026-07-20",
+        "price": 42.38
+      },
+      {
+        "date": "2026-07-27",
+        "price": 41.79
+      },
+      {
+        "date": "2026-08-03",
+        "price": 40.63
+      },
+      {
+        "date": "2026-08-10",
+        "price": 39.14
+      },
+      {
+        "date": "2026-08-17",
+        "price": 38.91
+      },
+      {
+        "date": "2026-08-24",
+        "price": 38.5
+      }
+    ]
+  },
+  {
+    "id": "madeira",
+    "slug": "madeira-certificada",
+    "name": "Madeira Certificada",
+    "kicker": "Manejo florestal FSC",
+    "unit": "R$/m³ (serrada)",
+    "origin": {
+      "region": "Sul do Amazonas",
+      "waterway": "Rio Purus",
+      "municipalities": [
+        "Boca do Acre",
+        "Lábrea",
+        "Manicoré"
+      ]
+    },
+    "contextFact": "Áreas de manejo florestal certificado extraem menos de 2 árvores por hectare a cada 25 a 30 anos.",
+    "accent": "#c8a35c",
+    "accentSoft": "#3a2c1e",
+    "source": {
+      "label": "Relatório de Preços de Produtos Florestais Madeireiros",
+      "org": "SEPROR-AM",
+      "url": "https://www.sepror.am.gov.br",
+      "updateFrequency": "mensal"
+    },
+    "description": "Toras extraídas sob plano de manejo, rastreadas da floresta em pé até a serraria certificada.",
+    "history": [
+      {
+        "date": "2026-05-25",
+        "price": 2205.17
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2191.34
+      },
+      {
+        "date": "2026-06-08",
+        "price": 2201.05
+      },
+      {
+        "date": "2026-06-15",
+        "price": 2225.98
+      },
+      {
+        "date": "2026-06-22",
+        "price": 2220.07
+      },
+      {
+        "date": "2026-06-29",
+        "price": 2207.1
+      },
+      {
+        "date": "2026-07-06",
+        "price": 2197.77
+      },
+      {
+        "date": "2026-07-13",
+        "price": 2223.47
+      },
+      {
+        "date": "2026-07-20",
+        "price": 2202.28
+      },
+      {
+        "date": "2026-07-27",
+        "price": 2207.99
+      },
+      {
+        "date": "2026-08-03",
+        "price": 2195.59
+      },
+      {
+        "date": "2026-08-10",
+        "price": 2219.37
+      },
+      {
+        "date": "2026-08-17",
+        "price": 2195.82
+      },
+      {
+        "date": "2026-08-24",
+        "price": 2180
+      }
+    ]
+  }
+]
